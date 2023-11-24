@@ -8,6 +8,12 @@
   <body>
     <h1>Bonjour chez vous <span>{{ username }}</span>!!</h1>
 
+    <ul>
+      {% for member in members %}
+      <li>{{ member }}</li>
+      {% endfor %}
+    </ul>
+
     <form method="POST" action="">
       <input type="username" name="username" placeholder="username" />
       <button type="submit">Envoyer</button>
